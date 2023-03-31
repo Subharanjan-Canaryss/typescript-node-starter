@@ -6,16 +6,6 @@
         "type": "git",
         "url": "https://github.com/Microsoft/TypeScript-Node-Starter"
     },
-{
-  "name": "my-project",
-  "version": "1.0.0",
-  "dependencies": {
-    "@typescript-eslint/parser": "^4.14.2",
-    "@typescript-eslint/eslint-plugin": "^4.14.2",
-    "eslint": "^7.19.0"
-        }
-    },
-
     "author": "Bowden Kelly",
     "license": "MIT",
     "scripts": {
@@ -74,6 +64,8 @@
         "@types/express": "4.17.11",
         "@types/express-flash": "0.0.2",
         "@types/express-session": "1.17.3",
+        "@typescript-eslint/parser": "^4.14.2",
+        "@typescript-eslint/eslint-plugin": "^4.14.2",
         "@types/jest": "^26.0.23",
         "@types/jquery": "3.5.5",
         "@types/lodash": "^4.14.170",
@@ -92,6 +84,7 @@
         "@types/winston": "2.4.4",
         "@typescript-eslint/eslint-plugin": "4.14.2",
         "@typescript-eslint/parser": "4.14.2",
+        "eslint": "^8.10.0",
         "chai": "4.3.0",
         "concurrently": "6.0.2",
         "eslint": "7.19.0",
