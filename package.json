@@ -6,6 +6,18 @@
         "type": "git",
         "url": "https://github.com/Microsoft/TypeScript-Node-Starter"
     },
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "dependencies": {
+    "@typescript-eslint/parser": "^4.33.2",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "eslint": "^7.32.0"
+  },
+  "scripts": {
+    "lint": "eslint . --ext .ts"
+  }
+}
     "author": "Bowden Kelly",
     "license": "MIT",
     "scripts": {
