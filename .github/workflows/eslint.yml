@@ -10,11 +10,12 @@
 name: ESLint
 
 on:
-  push:
-    branches: [ "ESLINT-CHECK" ]
-  pull_request:
-    # The branches below must be a subset of the branches above
-    branches: [ "ESLINT-CHECK" ]
+#   push:
+#     branches: [ "ESLINT-CHECK" ]
+#   pull_request:
+#     # The branches below must be a subset of the branches above
+#     branches: [ "ESLINT-CHECK" ]
+  workflow_dispatch: 
   schedule:
     - cron: '31 23 * * 6'
 
