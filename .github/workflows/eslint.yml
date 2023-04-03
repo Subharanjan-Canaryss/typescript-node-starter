@@ -41,7 +41,7 @@ jobs:
 
       - name: Run ESLint
         run: npx eslint .
-#             --config /home/runner/work/TypeScript-Node-Starter/TypeScript-Node-Starter/.eslintrc
+            --config /home/runner/work/TypeScript-Node-Starter/TypeScript-Node-Starter/.eslintrc
 #           --config eslint -c .eslintrc
 #           --ext .js,.jsx,.ts,.tsx
 #           --format @microsoft/eslint-formatter-sarif
