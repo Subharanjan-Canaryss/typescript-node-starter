@@ -23,6 +23,6 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Build & Publish to Github Container registry
         run:  | 
-                 docker build . --tag ghcr.io/Subharanjan-Canaryss/typescript-node-starter:latest
-                 docker run ghcr.io/Subharanjan-Canaryss/typescript-node-starter:latest
-                 docker push ghcr.io/Subharanjan-Canaryss/typescript-node-starter:latest
+                 docker build . --tag ghcr.io/subharanjan-canaryss/typescript-node-starter:latest
+                 docker run ghcr.io/subharanjan-canaryss/typescript-node-starter:latest
+                 docker push ghcr.io/subharanjan-canaryss/typescript-node-starter:latest
