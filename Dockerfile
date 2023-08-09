@@ -1,4 +1,2 @@
-FROM node:alpine
-COPY . /app
-WORKDIR /app
-CMD node app.js
+FROM owasp/zap2docker-stable
+COPY custom-scripts /zap/wrk/
