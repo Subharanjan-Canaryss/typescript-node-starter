@@ -17,5 +17,5 @@ jobs:
           docker_name: 'ghcr.io/subharanjan-canaryss/typescript-node-starter:latest'
           format: openapi
           target: 'https://github.com/subharanjan-canaryss/typescript-node-starter'
-          rules_file_name: 'src/server.ts'
+          rules_file_name: 'check.ts'
           cmd_options: '-a'
