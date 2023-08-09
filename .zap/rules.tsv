@@ -1,0 +1,8 @@
+# Custom ZAP Rules
+
+# RuleID   Name                Risk    Confidence  Description
+1         NoSQL Injection     High    Medium      Detects potential NoSQL injection vulnerabilities
+2         XSS Detection       High    High        Detects potential Cross-Site Scripting vulnerabilities
+3         Directory Listing   Low     Medium      Detects directory listing vulnerabilities
+4         CSRF Protection     Medium  High        Detects missing CSRF protection
+5         Insecure Cookies    Medium  Medium      Detects cookies without secure and HttpOnly flags
