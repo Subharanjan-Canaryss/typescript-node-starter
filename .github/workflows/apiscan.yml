@@ -13,6 +13,7 @@ jobs:
       - name: ZAP Scan
         uses: zaproxy/action-api-scan@v0.4.0
         with:
+          username​: ​${{ secrets.GHCR_USERNAME }}
           token: ${{ secrets.TEST_SECRECT }}
           docker_name: 'ghcr.io/subharanjan-canaryss/typescript-node-starter:latest'
           format: openapi
