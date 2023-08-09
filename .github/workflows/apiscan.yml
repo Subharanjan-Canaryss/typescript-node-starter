@@ -1,7 +1,8 @@
+name: API-SCAN
 on:
   push:
-    branches:
-      - master
+    branches: [ "ESLINT-CHECK" ]
+
 
 jobs:
   zap_scan:
