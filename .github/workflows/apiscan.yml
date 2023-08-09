@@ -1,9 +1,12 @@
-name: "API-SCAN" 
-on: [push]
+on:
+  push:
+    branches:
+      - master
+
 jobs:
   zap_scan:
     runs-on: ubuntu-latest
-    name: Scan the webapplication
+    name: Scan the web application
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -13,8 +16,14 @@ jobs:
       - name: ZAP Scan
         uses: zaproxy/action-api-scan@v0.4.0
         with:
-          username​: ​${{ secrets.GHCR_USERNAME }}
-          token: ${{ secrets.TEST_SECRECT }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Login to GHCR
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ secrets.GHCR_USERNAME }}
+          password: ${{ secrets.GHCR_USERNAME }}
           docker_name: 'ghcr.io/subharanjan-canaryss/typescript-node-starter:latest'
           format: openapi
           target: 'https://github.com/subharanjan-canaryss/typescript-node-starter'
