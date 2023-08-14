@@ -19,6 +19,6 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           docker_name: 'owasp/zap2docker-stable'
           format: openapi
-          target: 'https://github.com'  # Change this to your application's URL
+          target: 'https://apnakycwebuat.rblbank.com/RBL_BANK_UAT_V2/'  # Change this to your application's URL
           rules_file_name: '.zap/rules.tsv'
           cmd_options: '-a'
