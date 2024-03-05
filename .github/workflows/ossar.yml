@@ -1,6 +1,4 @@
-
 name: OSSAR REAL
-
 on:
   push:
     branches: [ "ESLINT-CHECK" ]
