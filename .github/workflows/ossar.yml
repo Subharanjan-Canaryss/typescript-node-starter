@@ -52,7 +52,7 @@ jobs:
       uses: mr-sherman/sarif-to-csv@v2.1      
       with:
         input-file: "D:\\a\\typescript-node-starter\\typescript-node-starter\\.gdn\\msdo.sarif"
-        output-file: "D:\\a\\typescript-node-starter\\typescript-node-starter\\.gdn\\msdo.sarif.csv"
+        output-file: "D:\\a\\typescript-node-starter\\typescript-node-starter\\.gdn\\msdo.csv"
         
     - name: Upload CSV
       uses: actions/upload-artifact@v2
